@@ -10,14 +10,14 @@ $section = $phpWord->addSection();
 $section->addText(
     '"Learn from yesterday, live for today, hope for tomorrow. '
         . 'The important thing is not to stop questioning." '
-        . '(Albert Einstein)'
+        . '(Albert Einstein) 🍔'
 );
 
 // Adding Text element with font customized inline...
 $section->addText(
     '"Great achievement is usually born of great sacrifice, '
         . 'and is never the result of selfishness." '
-        . '(Napoleon Hill)',
+        . '(Napoleon Hill) 🍔',
     array('name' => 'Tahoma', 'size' => 10)
 );
 
@@ -30,7 +30,7 @@ $phpWord->addFontStyle(
 $section->addText(
     '"The greatest accomplishment is not in never falling, '
         . 'but in rising again after you fall." '
-        . '(Vince Lombardi)',
+        . '(Vince Lombardi) 🍔',
     $fontStyleName
 );
 
