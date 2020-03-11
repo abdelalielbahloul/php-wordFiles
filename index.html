@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hellow world</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
 <body>
-    <h1>
-        Salut tous le monde 
-    </h1>
-
-    <a role="button" href="generateFile.php">Generate</a>
+    <div class="container-fluid mt-4">
+        <h1>
+            Click on the generate button to have a Hamburger 
+        </h1>
+    
+        <a id="btnGene" role="button" class="btn btn-primary" href="generateFile.php">Generate</a>
+        <div class="row mt-3" id="hamb"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+   
+    <script>
+        $(function(){
+            $('#hamb').hide();
+            $("#btnGene").click(function(){
+                $('#hamb').show();
+                $("#hamb").html("<p class='mx-auto' style='font-size: 80px'>🍔 😀😀😀</p>");
+            });
+        })
+    </script>
 </body>
 </html>
